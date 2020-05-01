@@ -73,6 +73,13 @@ li {
     color: #C1D1D9;
 }
 
+
+
 .fa-check-circle.complete {
     color: #f368e0;
+}
+
+.fa-check-circle.complete.hidden,
+.far.fa-check-circle.hidden {
+    display: none;
 }
