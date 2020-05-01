@@ -40,8 +40,8 @@
 }
 
 .todo-btn {
-    border:1px solid blue;
-    background:blue;
+    border:1px solid #f368e0;
+    background:#f368e0;
     color:white;
 }
 
@@ -55,8 +55,24 @@ ul {
     text-align: left;
     padding: 0;
     color: #A4ABAE;
+    font-weight: 600;
+}
+
+li {
+    
+    margin-bottom: 10px;
+}
+
+.fas,
+.far {
+    float: right;
+    margin-left: 5px;
 }
 
 .completed-text {
     color: #C1D1D9;
+}
+
+.fa-check-circle.complete {
+    color: #f368e0;
 }
