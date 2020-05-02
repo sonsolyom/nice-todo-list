@@ -4,21 +4,21 @@ $('.todo-btn').click(() => {
         $('.todo-list').append(
             '<i class="far fa-check-circle"></i>'   
         );
-        $('.todo-list').append(
-            '<i class="fas fa-check-circle complete hidden"></i>'   
-        );
+        
         $('.todo-list').append(
             '<span class="fas fa-trash"></span>'
         );
-        
+        $('.todo-list').append(
+            '<i class="fas fa-check-circle complete hidden"></i>'   
+        );
         $('.todo-list').append(
             `<li>${$('.todo-input').val()}</li>`
         );
         $('li:last-child').click((event) => {
             $(event.target).toggleClass('completed-text');          
-                $('li:last-child>i:last-child').toggleClass('hidden');
-            
+                            
         });
+        
         
     } else {
         alert('Please write something firtst! :)');
