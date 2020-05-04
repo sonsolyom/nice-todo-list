@@ -31,7 +31,6 @@
     margin: 0 auto;
     flex-direction:row;
     border: 1px solid grey;
-    
 }
 
 .todo-input {
@@ -50,36 +49,47 @@
     margin: 0 auto;
 }
 
+.todo-item {
+    width: 200px;
+    position: relative;
+    text-align: left;
+}
+
 ul {
     list-style-type: none;
-    text-align: left;
     padding: 0;
     color: #A4ABAE;
     font-weight: 600;
 }
 
 li {
-    
-    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
 }
 
-.fas,
-.far {
-    float: right;
-    margin-left: 5px;
+.todo-item i.co,
+.todo-item i.de,
+#circle,
+#trash{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    color: #A4ABAE;
+    background: none;
+    border: none;
+    outline: none;
 }
 
-.completed-text {
-    color: #C1D1D9;
+.todo-item i.de,
+#trash {
+    right: 20px;
 }
 
-
-
-.fa-check-circle.complete {
+i.fas.fa-check-circle.co{
     color: #f368e0;
 }
 
-.fa-check-circle.complete.hidden,
-.far.fa-check-circle.hidden {
-    display: none;
+.lightGrey {
+    color: #DBDBDB;
 }
+
